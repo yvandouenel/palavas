@@ -1,0 +1,12 @@
+uuid: 783d0cde-66e1-4112-baf1-fdbff428b3c6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+  content:
+    - 'block_content:basic:9a35b4bf-c528-4465-a726-02aad1636bf0'
+id: lien_information
+title: 'Lien information'
+block_content_bundle: basic
+default_content: '{"_links":{"self":{"href":"http:\/\/local.ensemble.my\/block\/7?_format=hal_json"},"type":{"href":"http:\/\/fixed_block_content.drupal.org\/rest\/type\/block_content\/basic"}},"langcode":[{"value":"fr","lang":"fr"}],"type":[{"target_id":"basic"}],"status":[{"value":true,"lang":"fr"}],"info":[{"value":"Lien information","lang":"fr"}],"default_langcode":[{"value":true,"lang":"fr"}],"revision_translation_affected":[{"value":true,"lang":"fr"}],"body":[{"value":"\u003Cdiv class=\u0022under-inci-info\u0022\u003E\r\n\u003Cbutton class=\u0022btn btn-primary btn-lg information\u0022 data-target=\u0022#infoModal\u0022 data-toggle=\u0022modal\u0022 type=\u0022button\u0022\u003EJe m\u0027informe\u003C\/button\u003E\r\n\u003Cbutton class=\u0022btn btn-primary btn-lg incitation\u0022 data-target=\u0022#goModal\u0022 data-toggle=\u0022modal\u0022 type=\u0022button\u0022\u003EJe participe\u003C\/button\u003E\r\n\u003C\/div\u003E\r\n","format":"full_html","processed":"\u003Cdiv class=\u0022under-inci-info\u0022\u003E\n\u003Cbutton class=\u0022btn btn-primary btn-lg information\u0022 data-target=\u0022#infoModal\u0022 data-toggle=\u0022modal\u0022 type=\u0022button\u0022\u003EJe m\u0027informe\u003C\/button\u003E\n\u003Cbutton class=\u0022btn btn-primary btn-lg incitation\u0022 data-target=\u0022#goModal\u0022 data-toggle=\u0022modal\u0022 type=\u0022button\u0022\u003EJe participe\u003C\/button\u003E\n\u003C\/div\u003E\n","summary":"","lang":"fr"}]}'

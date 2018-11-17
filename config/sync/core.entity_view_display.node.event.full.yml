@@ -1,0 +1,121 @@
+uuid: 07bcb9b5-4070-4f21-9f31-6441588e6dce
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.event.body
+    - field.field.node.event.field_dates
+    - field.field.node.event.field_document
+    - field.field.node.event.field_event_type
+    - field.field.node.event.field_image
+    - field.field.node.event.field_inscription
+    - node.type.event
+  module:
+    - datetime_range
+    - ds
+    - text
+    - user
+    - webform
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col_stacked
+      library: ds/ds_2col_stacked
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          header: div
+          left: div
+          right: div
+          footer: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      header:
+        - field_event_type
+        - node_title
+      left:
+        - field_dates
+        - field_image
+        - body
+      right:
+        - field_document
+      footer:
+        - field_inscription
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          wrapper: h2
+          class: page-header
+          exclude_node_title: '0'
+          link: false
+id: node.event.full
+targetEntityType: node
+bundle: event
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    region: left
+  field_dates:
+    type: daterange_default
+    weight: 2
+    region: left
+    label: above
+    settings:
+      separator: '-'
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+  field_document:
+    type: entity_reference_label
+    weight: 5
+    region: right
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_event_type:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: header
+  field_image:
+    type: entity_reference_entity_view
+    weight: 3
+    region: left
+    label: hidden
+    settings:
+      view_mode: bandeau
+      link: false
+    third_party_settings: {  }
+  field_inscription:
+    type: webform_entity_reference_entity_view
+    weight: 6
+    region: footer
+    label: hidden
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+hidden:
+  content_moderation_control: true
+  field_event_condition: true
+  langcode: true
+  links: true

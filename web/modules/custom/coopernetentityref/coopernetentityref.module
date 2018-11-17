@@ -1,0 +1,30 @@
+<?php
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function coopernetentityref_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.coopernetentityref':
+      return t('
+        <h2>coopernetentityref</h2>
+        <h3>Manage default fixed block entity for events and articles</h3>
+        <p>visit <strong><a href="/coopernetentityref/generate">coopernetentityref/generate</a></p>
+        <p>enable in <strong>/admin/modules</strong>.</p>
+      ');
+  }
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function coopernetentityref_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  dpm($form_id);
+  if ( $form_id == "node_article_form") {
+    //dpm($form);
+    dpm($form['#process'][1]);
+    //dpm($form['field_bloc_incitation']);
+  }
+}

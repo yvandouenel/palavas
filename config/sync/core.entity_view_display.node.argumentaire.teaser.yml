@@ -1,0 +1,99 @@
+uuid: c9920e02-57ba-44b6-a006-eb347edd4eed
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.argumentaire.body
+    - field.field.node.argumentaire.field_image
+    - field.field.node.argumentaire.field_thematique
+    - node.type.argumentaire
+  module:
+    - ds
+    - field_group
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - node_title
+        - group_img_txt_date
+        - node_link
+        - field_image
+        - body
+    fields:
+      node_link:
+        plugin_id: node_link
+        weight: 12
+        label: hidden
+        formatter: default
+      node_title:
+        plugin_id: node_title
+        weight: 0
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h3
+          class: same-height-title
+  field_group:
+    group_img_txt_date:
+      children:
+        - node_link
+        - field_image
+        - body
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: event-img-txt-date
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'img txt date'
+id: node.argumentaire.teaser
+targetEntityType: node
+bundle: argumentaire
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 14
+    settings:
+      trim_length: 200
+    third_party_settings: {  }
+    region: ds_content
+  field_image:
+    type: entity_reference_entity_view
+    weight: 13
+    region: ds_content
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+hidden:
+  field_release_date: true
+  field_thematique: true
+  langcode: true
+  links: true

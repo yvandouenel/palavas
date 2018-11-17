@@ -1,0 +1,45 @@
+uuid: 4d702518-00f1-4d7c-b146-0bbd9414fc34
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.icon
+    - field.field.taxonomy_term.event_type.field_icon_class
+    - taxonomy.vocabulary.event_type
+  module:
+    - ds
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - field_icon_class
+id: taxonomy_term.event_type.icon
+targetEntityType: taxonomy_term
+bundle: event_type
+mode: icon
+content:
+  field_icon_class:
+    type: text_default
+    weight: 0
+    region: ds_content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  description: true
+  langcode: true

@@ -1,0 +1,101 @@
+/* article full content **************************************/
+body.page-node-type-article {
+  .region-content > h2.page-header {
+    display: none;
+  }
+  .field--name-field-thematique {
+    .title-regular();
+    text-transform: uppercase;
+    font-size: 0.8em;
+    a {
+      color: #000;
+    }
+  }
+  h2.page-header {
+    clear: both;
+    padding: 15px 0 0 0;
+  }
+  .information {
+    float: left;
+    background-color: transparent;
+    border: 0;
+    margin-bottom: 20px;
+  }
+  .incitation {
+    float: left;
+    background-color: transparent;
+    border: 0;
+    margin-bottom: 20px;
+  }
+  .same-height-col {
+    position: relative;
+    .under-inci-info {
+      .back-to-list {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: table;
+        margin: 100px auto 0 auto;
+        .button-back();
+        a{
+          font-size: 1em;
+        }
+      }
+    }
+  }
+
+
+}
+/* articles list ***********************************************/
+body.path-articles {
+  .node--view-mode-teaser {
+
+  }
+  .node--view-mode-liste {
+    .body-list-article {
+      min-height: 140px;
+      padding-bottom: 65px;
+    }
+    .page-header {
+      margin-bottom: 0;
+      a {
+        color: @red-ensemble;
+        text-decoration: none;
+        display: block;
+        &:hover {
+          color: @green-link-ensemble;
+        }
+      }
+    }
+    padding: 20px 20px 5px 20px;
+    margin: 20px 0;
+    background-color: @gray-light-ensemble;
+
+    line-height: 1.5em;
+    &:after {
+      display: block;
+      content: '';
+      clear: both;
+    }
+    .field--name-node-link {
+      position: absolute;
+      bottom: 5px;
+      right: 10px;
+      display: table;
+      a {
+        padding: 15px;
+        display: block;
+        .title-bold();
+        text-transform: uppercase;
+        background-color: @red-ensemble;
+        color: #FFF;
+        text-decoration: none;
+        &:hover {
+          background-color: @green-ensemble;
+          color: #000;
+        }
+      }
+
+    }
+  }
+}

@@ -1,0 +1,92 @@
+uuid: 753ee9bd-815b-4282-836e-729ee6433574
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.article
+  module:
+    - content_moderation
+_core:
+  default_config_hash: T_JxNjYlfoRBi7Bj1zs5Xv9xv1btuBkKp5C1tNrjMhI
+id: editorial
+label: Editorial
+type: content_moderation
+type_settings:
+  states:
+    archived:
+      published: false
+      default_revision: true
+      label: Archivé
+      weight: 5
+    demande_de_modification:
+      published: false
+      default_revision: false
+      label: 'Demande de modification'
+      weight: 7
+    demande_de_validation:
+      published: false
+      default_revision: false
+      label: 'Demande de validation'
+      weight: 6
+    draft:
+      published: false
+      default_revision: false
+      label: Brouillon
+      weight: -5
+    published:
+      published: true
+      default_revision: true
+      label: Publié
+      weight: 0
+  transitions:
+    archive:
+      label: Archive
+      from:
+        - published
+      to: archived
+      weight: 2
+    archived_draft:
+      label: 'Restauration à l''état de brouillon'
+      from:
+        - archived
+      to: draft
+      weight: 3
+    archived_published:
+      label: Re-publier
+      from:
+        - archived
+      to: published
+      weight: 4
+    create_new_draft:
+      label: 'Créer un nouveau brouillon'
+      to: draft
+      weight: 0
+      from:
+        - draft
+        - published
+    demander_une_modification:
+      label: 'Demander une modification'
+      from:
+        - demande_de_validation
+        - draft
+      to: demande_de_modification
+      weight: 6
+    demander_une_validation:
+      label: 'Demander une validation'
+      from:
+        - demande_de_modification
+        - draft
+      to: demande_de_validation
+      weight: 5
+    publish:
+      label: Publier
+      to: published
+      weight: 1
+      from:
+        - demande_de_modification
+        - demande_de_validation
+        - draft
+        - published
+  entity_types:
+    node:
+      - article

@@ -1,0 +1,74 @@
+uuid: 42c65512-0208-4891-8883-6ae29fb378ad
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.slideshow
+    - field.field.node.article.body
+    - field.field.node.article.field_image
+    - field.field.node.article.field_release_date
+    - node.type.article
+  module:
+    - ds
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - node_title
+        - field_image
+        - body
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 0
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h2
+          class: ''
+id: node.article.slideshow
+targetEntityType: node
+bundle: article
+mode: slideshow
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 2
+    settings:
+      trim_length: 200
+    third_party_settings: {  }
+    region: ds_content
+  field_image:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: slideshow
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: ds_content
+hidden:
+  content_moderation_control: true
+  field_home_slideshow: true
+  field_release_date: true
+  field_thematique: true
+  langcode: true
+  links: true

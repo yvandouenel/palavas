@@ -1,0 +1,255 @@
+.modal-body {
+  li {
+    &#custom-form-this-event{
+      a {
+        .lien-modal();
+        font-size: 1.8em;
+        &:before {
+          .glyphicon();
+          content: "\e85b";
+          color: @red-ensemble;
+        }
+      }
+    }
+    p {
+      a {
+        .lien-modal();
+      }
+    }
+    &#pause-cafe {
+      margin: 0;
+      display: block;
+      background-color: @gray-ensemble;
+      font-size: 1.4em;
+      padding: 10px 20px;
+      color: #000;
+      text-decoration: none;
+      a{
+        padding: 10px;
+        &:hover {
+          text-decoration: none;
+          color: white;
+          background-color: black;
+          &:before {
+            color: #FFF;
+          }
+        }
+
+      }
+    }
+  }
+
+}
+.lien-modal {
+  display: block;
+  background-color: @gray-light-ensemble;
+  font-size: 1.4em;
+  padding: 10px 20px;
+  color: #000;
+  text-decoration: none;
+  margin-bottom: 10px;
+  text-align: center;
+  &:hover {
+    background-color: black;
+    color: #FFF;
+  }
+}
+#block-information {
+  .title-modal();
+}
+#block-incitation {
+  .title-modal();
+  h4.modal-title {
+    &:before {
+      content: "\e882";
+    }
+  }
+}
+.title-modal{
+  h4.modal-title {
+    .title-regular();
+    font-size: 2em;
+    text-transform: uppercase;
+    &:before {
+      .glyphicon();
+      content: "\e883";
+      color: @red-ensemble;
+      background-color: #FFF;
+      font-size: 2em;
+      top: 10px;
+    }
+  }
+}
+
+.group-header {
+  position: relative;
+  .under-inci-info {
+    position: absolute;
+    z-index: 999;
+    right: 0;
+    top: -1px;
+    width: 290px;
+    height: 101px;
+    @media (max-width: @screen-md) {
+      position: static;
+      width: auto;
+      height: auto;
+      button{
+        width: 100%;
+        margin: 5px auto;
+        padding: 6px;
+      }
+    }
+  }
+  @media (max-width: @screen-sm) {
+    img {
+      display: none !important;
+    }
+  }
+}
+.path-frontpage{
+  .under-inci-info {
+    .btn-primary {
+      background-color: transparent;
+      border: 0;
+      margin: 0;
+    }
+    padding: 30px 20px;
+    height: 360px;
+    background-color: white;
+    h3{
+      min-height: 30px;
+      margin-top: 20px;
+      &.h3-information {
+        margin-top: 50px;
+      }
+    }
+    @media (max-width: @screen-md) {
+      background-color: transparent;
+      padding: 0;
+      height: auto;
+      h3{
+        min-height: 30px;
+        margin-top: 20px;
+        &.h3-information {
+          margin-top: -30px;
+        }
+        a{
+          background-color: transparent;
+          display: block;
+          padding: 5px 20px;
+          border-radius: 5px;
+          border: 3px solid @gray-darker-ensemble;
+          width: 80%;
+          margin: 0 auto;
+          text-align: center;
+          font-size: 2em;
+          padding-top: 60px;
+          &:before {
+            float: left;
+            margin-top: -50px;
+          }
+          &:after {
+            content: "";
+            display: block;
+            clear: both;
+          }
+        }
+      }
+    }
+    @media (max-width: @screen-sm) {
+      h3 {
+
+        a{
+          border: 0;
+          &:before {
+            float: none;
+            margin-top: -50px;
+          }
+          &:after {
+            content: "";
+            display: block;
+            clear: both;
+          }
+        }
+      }
+    }
+  }
+}
+.under-inci-info {
+  color: white;
+  background-color: white;
+  button{
+    width: 200px;
+    margin: 5px 0 5px 45px;
+    padding: 6px;
+  }
+  .information {
+    color: @red-ensemble;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    &:hover {
+      color: @green-ensemble;
+      &:before {
+        background-color: @green-ensemble;
+      }
+    }
+    &:before {
+      .glyphicon();
+      content: "\e883";
+      color: white;
+      display: block;
+      font-size: 4em;
+      background-color: @red-ensemble;
+      border-radius: 35px;
+      margin-bottom: 10px;
+      left: 50px;
+    }
+  }
+  .incitation {
+    color: @red-ensemble;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    &:hover {
+      color: @green-ensemble;
+      &:before {
+        background-color: @green-ensemble;
+      }
+    }
+    &:before {
+      .glyphicon();
+      content: "\e882";
+      color: white;
+      display: block;
+      font-size: 4em;
+      background-color: @red-ensemble;
+      border-radius: 35px;
+      margin-bottom: 10px;
+      left: 50px;
+    }
+  }
+  h3 {
+    padding-left: 50px;
+    margin-top: 15px;
+  }
+  @media (max-width: @screen-sm) {
+    position: static;
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    height: auto;
+    h3 {
+      padding: 0;
+      width: 100%;
+      border-radius: 8px;
+      margin: 10px auto;
+      a {
+        display: block;
+        text-align: center;
+        padding: 10px;
+      }
+    }
+  }
+}

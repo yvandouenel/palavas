@@ -1,0 +1,76 @@
+framework:
+  css:
+    theme:
+      css/style.min.css: {}
+  js:
+    bootstrap/js/affix.js: {}
+    bootstrap/js/alert.js: {}
+    bootstrap/js/button.js: {}
+    bootstrap/js/carousel.js: {}
+    bootstrap/js/collapse.js: {}
+    bootstrap/js/dropdown.js: {}
+    bootstrap/js/modal.js: {}
+    bootstrap/js/tooltip.js: {}
+    bootstrap/js/popover.js: {}
+    bootstrap/js/scrollspy.js: {}
+    bootstrap/js/tab.js: {}
+    bootstrap/js/transition.js: {}
+
+leaflet:
+  js:
+    js/leaflet/leaflet.js: {}
+    js/map.js: {}
+  dependencies:
+    - core/jquery
+
+checktopscroll:
+  js:
+    js/checktopscroll/checktopscroll.js: {}
+
+sameheight:
+  js:
+    js/sameheight/jquery.matchHeight-min.js: {}
+  dependencies:
+      - core/jquery
+
+sameheighttitles:
+  js:
+    js/sameheight/same-height-titles.js: {}
+  dependencies:
+      - core/jquery
+
+sameheightcols:
+  js:
+    js/sameheight/same-height-cols.js: {}
+  dependencies:
+      - core/jquery
+
+slideshow:
+  js:
+    js/slideshow/slideshow.js: {}
+  dependencies:
+      - core/jquery
+
+incentive:
+  js:
+    js/incentive/incentive.js: {}
+  dependencies:
+      - core/jquery
+
+searchsm:
+  js:
+    js/search/searchsm.js: {}
+  dependencies:
+      - core/jquery
+
+managedates:
+  js:
+    js/managedates/managedates.js: {}
+  dependencies:
+      - core/jquery
+
+monthevents:
+  js:
+    js/managedates/monthevents.js: {}
+  dependencies:
+      - core/jquery

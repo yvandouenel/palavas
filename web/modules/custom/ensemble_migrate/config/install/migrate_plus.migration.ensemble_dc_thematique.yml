@@ -1,0 +1,33 @@
+langcode: fr
+id: ensemble_dc_thematique
+label: Thématiques
+migration_group: ensemble_dc
+source:
+  plugin: ensemble_dc_thematique
+process:
+  tid:
+    plugin: static_map
+    bypass: false
+    source: cat_id
+    default_value: 2 # Archives.
+    map:
+      1: 12  # Actualité Occitanie -> Occitanie et Hérault
+      5: 12  # Conseillers municipaux... -> Occitanie et Hérault
+      6: 6   # Brasserie des idées -> Brasserie des idées
+      9: 12  # Elections Régionales... -> Occitanie et Hérault
+      15: 12 # Revue de Presse Hérault et Languedoc -> Occitanie et Hérault
+      17: 12 # Anticapitalistes... -> Occitanie et Hérault
+      19: 12 # Lettre Electronique... -> Occitanie et Hérault
+      20: 3  # International -> International
+      24: 12 # Elections cantonales... -> Occitanie et Hérault
+      33: 12 # Ensemble ! Hérault,  Occitanie -> Occitanie et Hérault
+      36: 3  # Solidarité internationale en Languedoc -> International
+      37: 12 # Région Occitanie -> Occitanie et Hérault
+      39: 12 # Montpellier & Métropole... -> Occitanie et Hérault
+      40: 12 # Béziers -> Occitanie et Hérault
+      41: 1  # Ecologie Occitanie -> Ecologie
+      43: 12 # Actualité Montpellier et Hérault -> Occitanie et Hérault
+destination:
+  plugin: 'entity:taxonomy_term'
+  default_bundle: event_type
+migration_dependencies: {  }

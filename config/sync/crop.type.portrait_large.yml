@@ -1,0 +1,12 @@
+uuid: e2973be2-c7da-41ee-9dba-0853ee15e39a
+langcode: fr
+status: true
+dependencies: {  }
+label: 'Portrait large'
+id: portrait_large
+description: ''
+aspect_ratio: '9:16'
+soft_limit_width: 450
+soft_limit_height: 800
+hard_limit_width: 45
+hard_limit_height: 80

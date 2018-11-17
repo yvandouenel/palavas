@@ -1,0 +1,12 @@
+uuid: 1d979f9b-e515-4283-8174-4347367a0e9e
+langcode: fr
+status: true
+dependencies: {  }
+label: 'Slideshow (640x360)'
+id: slideshow
+description: ''
+aspect_ratio: '64:36'
+soft_limit_width: 640
+soft_limit_height: 360
+hard_limit_width: 640
+hard_limit_height: 360

@@ -1,0 +1,29 @@
+uuid: d1754556-bbf6-42c4-90f0-513618012795
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_tag_media
+    - media.type.video_embed
+    - taxonomy.vocabulary.tag_media
+id: media.video_embed.field_tag_media
+field_name: field_tag_media
+entity_type: media
+bundle: video_embed
+label: Tag
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tag_media: tag_media
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

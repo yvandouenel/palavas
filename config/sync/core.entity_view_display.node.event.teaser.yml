@@ -1,0 +1,132 @@
+uuid: c63c9496-64de-4fa7-9f6c-175191e73141
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.event.body
+    - field.field.node.event.field_dates
+    - field.field.node.event.field_document
+    - field.field.node.event.field_event_type
+    - field.field.node.event.field_image
+    - field.field.node.event.field_inscription
+    - node.type.event
+  module:
+    - ds
+    - field_group
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - node_link
+        - node_title
+        - group_group_title
+        - field_image
+        - group_img_txt_date
+        - field_date
+        - body
+    fields:
+      node_link:
+        plugin_id: node_link
+        weight: 0
+        label: hidden
+        formatter: default
+        settings:
+          'link text': 'Read more'
+          'link class': read-more-home
+          wrapper: ''
+          class: ''
+      node_title:
+        plugin_id: node_title
+        weight: 0
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h3
+          class: 'event event-article-home-title'
+          exclude_node_title: '1'
+  field_group:
+    group_img_txt_date:
+      children:
+        - node_link
+        - field_image
+        - field_date
+      parent_name: ''
+      weight: 2
+      format_type: html_element
+      format_settings:
+        label: 'img txt date'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'event-img-txt-date event-event'
+      label: 'img txt date'
+    group_group_title:
+      children:
+        - node_title
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      format_settings:
+        label: 'Group title'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'group-title same-height-title'
+      label: 'Group title'
+id: node.event.teaser
+targetEntityType: node
+bundle: event
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 3
+    settings:
+      trim_length: 200
+    third_party_settings: {  }
+    region: ds_content
+  field_image:
+    type: entity_reference_entity_view
+    weight: 1
+    region: ds_content
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+hidden:
+  content_moderation_control: true
+  field_dates: true
+  field_document: true
+  field_event_condition: true
+  field_event_type: true
+  field_inscription: true
+  langcode: true
+  links: true

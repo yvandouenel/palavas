@@ -1,0 +1,27 @@
+{#
+/**
+ * @file
+ * Display Suite 1 column template.
+ *
+ * Available variables:
+ * - ds_content_wrapper: wrapper around content
+ * - attributes: content region attributes
+ * - ds_content: content region
+
+   {{ ds_content }}
+ */
+#}
+{% set path_to_node = path('entity.node.canonical', {'node': node.id}) %}
+<{{ ds_content_wrapper }}{{ attributes.addClass('ds-1col', 'clearfix', 'diapositive') }}>
+
+{{ title_suffix.contextual_links }}
+<a href="{{ path_to_node }}">{{ content.field_image }}</a>
+<div class="diapo-h3-txt event">
+    <h3 class="h3-ss-home"><a href="{{ path_to_node }}">{{ content.title }}</a></h3>
+
+    <div class="txt-diapo">
+        {{ content.body }}
+    </div>
+</div>
+
+</{{ ds_content_wrapper }}>

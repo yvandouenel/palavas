@@ -1,0 +1,22 @@
+uuid: 0f58c740-42df-4f57-b5bd-1e12e07d5805
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ensemble
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: ensemble_content
+theme: ensemble
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Contenu de la page principale'
+  provider: system
+  label_display: '0'
+visibility: {  }

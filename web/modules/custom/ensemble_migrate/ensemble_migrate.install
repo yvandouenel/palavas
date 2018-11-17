@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Procédures d'installation et de mise à jour.
+ */
+
+/**
+ * Implements hook_uninstall().
+ */
+function ensemble_migrate_uninstall() {
+  // Delete this module migrations.
+  $config_factory = Drupal::configFactory();
+  $migrations = [
+    'ensemble_dc_file',
+    'ensemble_dc_thematique',
+    'ensemble_dc_article',
+    'ensemble_dc_url_alias',
+  ];
+  foreach ($migrations as $migration) {
+    $config_factory->getEditable('migrate_plus.migration.' . $migration)->delete();
+  }
+  $config_factory->getEditable('migrate_plus.migration_group.ensemble_dc')->delete();
+}

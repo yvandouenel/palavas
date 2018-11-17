@@ -1,0 +1,21 @@
+uuid: 37925d21-ec8e-40da-a94e-6e841c552de7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_icon_class
+    - taxonomy.vocabulary.event_type
+  module:
+    - text
+id: taxonomy_term.event_type.field_icon_class
+field_name: field_icon_class
+entity_type: taxonomy_term
+bundle: event_type
+label: 'Classe icône'
+description: "Entrer le la classe de l'icône sous la forme suivante :\r\n&lt;pre&gt;&lt;div class=\"icon-archive\"&gt;&lt;span class=\"sr-only\"&gt;Archives&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;\r\nLes classes disponibles sont  :  icon-idea, icon-organic, icon-international, icon-fight, icon-occitanie, icon-social, icon-solidarity"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,10 @@
+uuid: 9695eaad-cf4d-41dc-af90-4696fadb744a
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+id: media.slideshow
+label: 'slideshow (640x360)'
+targetEntityType: media
+cache: true

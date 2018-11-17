@@ -1,0 +1,22 @@
+uuid: f1fa0311-c4e6-404c-8631-b969028c716c
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - ensemble
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: ensemble_local_tasks
+theme: ensemble
+region: content
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Onglets
+  provider: core
+  label_display: visible
+  primary: true
+  secondary: true
+visibility: {  }

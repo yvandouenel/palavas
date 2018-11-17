@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * @file
+ * Bootstrap sub-theme.
+ *
+ * Place your custom PHP code in this file.
+ */
+function ensemble_preprocess_page(&$variables) {
+  if (\Drupal::routeMatch()->getRouteName() == 'view.frontpage.page_1') {
+    $variables['#attached']['library'][] = 'ensemble/sameheight';
+    $variables['#attached']['library'][] = 'ensemble/sameheighttitles';
+    $variables['#attached']['library'][] = 'ensemble/slideshow';
+    $variables['#attached']['library'][] = 'ensemble/managedates';
+  }
+  else if ((\Drupal::routeMatch()->getRouteName() == 'view.argumentaires.page_argumentaires') ||
+    (\Drupal::routeMatch()->getRouteName() == 'view.events.page_events') ||
+    (\Drupal::routeMatch()->getRouteName() == 'view.articles.page_articles') ) {
+    $variables['#attached']['library'][] = 'ensemble/sameheight';
+    $variables['#attached']['library'][] = 'ensemble/sameheighttitles';
+  }
+  else if ((\Drupal::routeMatch()->getRouteName() == 'view.events.list_event')) {
+    $variables['#attached']['library'][] = 'ensemble/monthevents';
+  }
+}

@@ -1,0 +1,11 @@
+langcode: fr
+status: true
+dependencies: {  }
+id: ensemble_dc
+label: 'Import from Ensemble dc'
+description: 'Migrations depuis la version Dotclear d''Ensemble'
+source_type: Dotclear
+module: null
+shared_configuration:
+  source:
+    key: dc

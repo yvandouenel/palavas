@@ -1,0 +1,20 @@
+uuid: 27c5836e-8e59-4e0e-a22c-3e4cca14c471
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - ensemble
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: ensemble_page_title
+theme: ensemble
+region: content
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Titre de page'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,5 @@
+coopernetentityref.form:
+  title: 'coopernetentityref settings'
+  description: 'Configure settings for the coopernetentityref module.'
+  route_name: coopernetentityref.form
+  parent: 'system.admin_config_development'

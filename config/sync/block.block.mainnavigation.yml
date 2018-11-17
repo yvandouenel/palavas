@@ -1,0 +1,24 @@
+uuid: df84e995-f966-414b-859c-b7615a04e653
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - ensemble
+id: mainnavigation
+theme: ensemble
+region: navigation_collapsible
+weight: -9
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

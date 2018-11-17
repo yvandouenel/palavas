@@ -1,0 +1,20 @@
+uuid: dd86688b-c580-41b1-87c7-3c2b38207fda
+langcode: fr
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - ensemble
+id: formulairederecherche
+theme: ensemble
+region: content
+weight: -8
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Formulaire de recherche'
+  provider: search
+  label_display: visible
+visibility: {  }

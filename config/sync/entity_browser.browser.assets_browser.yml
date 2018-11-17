@@ -1,0 +1,42 @@
+uuid: 9268d0dc-dddd-4973-a902-2c2b996800a7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.media_browser
+  module:
+    - views
+name: assets_browser
+label: 'Navigateur de medias'
+display: iframe
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Sélectionner les entités'
+  auto_open: true
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: single
+widget_selector_configuration: {  }
+widgets:
+  86a5922d-42cd-48d0-8aaf-ccfccd12765c:
+    settings:
+      extensions: 'jpg jpeg png gif'
+      media_type: image
+      upload_location: 'public://'
+      multiple: '1'
+      submit_text: 'Sélectionner des fichiers'
+    uuid: 86a5922d-42cd-48d0-8aaf-ccfccd12765c
+    weight: -9
+    label: 'Upload images'
+    id: media_image_upload
+  1de4e6e3-8890-49c2-a62c-84a0398fd0f8:
+    settings:
+      view: media_browser
+      view_display: entity_browser_1
+      submit_text: 'Sélectionner les entités'
+      auto_select: false
+    uuid: 1de4e6e3-8890-49c2-a62c-84a0398fd0f8
+    weight: -10
+    label: view
+    id: view

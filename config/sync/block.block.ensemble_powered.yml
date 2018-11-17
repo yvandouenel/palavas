@@ -1,0 +1,22 @@
+uuid: ae6bada7-878c-46ab-9e53-bb1be68bae1a
+langcode: fr
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - ensemble
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: ensemble_powered
+theme: ensemble
+region: navigation
+weight: -8
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Propulsé par Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

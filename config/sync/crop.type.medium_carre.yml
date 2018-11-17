@@ -1,0 +1,12 @@
+uuid: cd94cd3b-e89c-4ec2-9182-270bba825212
+langcode: fr
+status: true
+dependencies: {  }
+label: 'Medium carré'
+id: medium_carre
+description: ''
+aspect_ratio: '1:1'
+soft_limit_width: 500
+soft_limit_height: 500
+hard_limit_width: 400
+hard_limit_height: 400

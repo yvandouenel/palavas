@@ -1,0 +1,66 @@
+{#
+/**
+ * @file
+ * Display Suite 2 column stacked template.
+ *
+ * Available variables:
+ * - outer_wrapper: outer wrapper element
+ * - header_wrapper: wrapper element around header region
+ * - left_wrapper: wrapper element around left region
+ * - right_wrapper: wrapper element around right region
+ * - footer_wrapper: wrapper element around footer region
+ * - attributes: layout attributes
+ * - header_attributes: attributes for header region
+ * - left_attributes: attributes for left region
+ * - right_attributes: attributes for right region
+ * - footer_attributes: attributes for footer region
+ * - header: content of header region
+ * - left: content of left region
+ * - right: content of right region
+ * - footer: content of footer region
+ */
+#}
+{{ attach_library('ensemble/sameheight') }}
+{{ attach_library('ensemble/sameheightcols') }}
+
+<{{ outer_wrapper }}{{ attributes.addClass('ds-2col-stacked', 'clearfix') }}>
+
+<div class="row">
+  <div class="col-md-12">
+      {{ title_suffix.contextual_links }}
+    <{{ header_wrapper }}{{ header_attributes.addClass('group-header') }}>
+      {{ header }}
+  </{{ header_wrapper }}>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-9">
+<div class="same-height-col">
+    <{{ left_wrapper }}{{ left_attributes.addClass('group-left') }}>
+      {{ left }}
+    </{{ left_wrapper }}>
+  </div>
+  </div>
+  <div class="col-md-3">
+    <div class="same-height-col">
+    <div class="under-inci-info">
+      <button class="btn btn-primary btn-lg information" data-target="#infoModal" data-toggle="modal" type="button">Je m'informe</button>
+      <button class="btn btn-primary btn-lg incitation" data-target="#goModal" data-toggle="modal" type="button">Je participe</button>
+      <div class="back-to-list"><a href="/articles">Retour à la liste</a></div>
+    </div>
+    <{{ right_wrapper }}{{ right_attributes.addClass('group-right') }}>
+      {{ right }}
+  </{{ right_wrapper }}>
+  </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <{{ footer_wrapper }}{{ footer_attributes.addClass('group-footer') }}>
+      {{ footer }}
+  </{{ footer_wrapper }}>
+</div>
+</div>
+
+</{{ outer_wrapper }}>

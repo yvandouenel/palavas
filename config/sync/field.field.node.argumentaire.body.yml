@@ -1,0 +1,22 @@
+uuid: 50182715-477b-4245-a041-ef08593817cf
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.argumentaire
+  module:
+    - text
+id: node.argumentaire.body
+field_name: body
+entity_type: node
+bundle: argumentaire
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

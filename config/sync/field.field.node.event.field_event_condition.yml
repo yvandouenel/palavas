@@ -1,0 +1,23 @@
+uuid: 9c240dfd-9d4c-45ff-80ad-b2d0857136bb
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_condition
+    - node.type.event
+id: node.event.field_event_condition
+field_name: field_event_condition
+entity_type: node
+bundle: event
+label: 'J''accepte les conditions d''utilisation de la salle des mariages'
+description: 'En cochant cette case, je reconnais avoir pris connaissance du  règlement de fonctionnement de la salle des mariages et m''engage à le respecter.<br><a targe="_blank" href="/reglement">Voir le règlement de la salle des mariages</a>'
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

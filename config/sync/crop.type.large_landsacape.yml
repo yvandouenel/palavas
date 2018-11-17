@@ -1,0 +1,12 @@
+uuid: 1ac7a39f-c2f3-45b8-8e7f-6b4828e98729
+langcode: fr
+status: true
+dependencies: {  }
+label: 'Large paysage (1200x737)'
+id: large_landsacape
+description: ''
+aspect_ratio: '1200:737'
+soft_limit_width: 1200
+soft_limit_height: 737
+hard_limit_width: 1200
+hard_limit_height: 737

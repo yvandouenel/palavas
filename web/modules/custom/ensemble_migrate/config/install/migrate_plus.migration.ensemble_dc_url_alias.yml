@@ -1,0 +1,32 @@
+langcode: fr
+id: ensemble_dc_url_alias
+label: Alias d'URL
+migration_group: ensemble_dc
+source:
+  plugin: ensemble_dc_article
+  constants:
+    slash: /
+    lang: fr
+    source_prefix: /node/
+process:
+  temp_nid:
+    plugin: migration_lookup
+    source: post_id
+    migration: ensemble_dc_article
+  source:
+    plugin: concat
+    source:
+      - constants/source_prefix
+      - "@temp_nid"
+  alias:
+    plugin: concat
+    source:
+      - constants/slash
+      - post_url
+  langcode: constants/lang
+destination:
+  plugin: 'url_alias'
+migration_dependencies:
+  required:
+    - ensemble_dc_article
+  optional: {  }

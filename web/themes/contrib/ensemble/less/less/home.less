@@ -1,0 +1,88 @@
+
+#block-mainnavigation {
+  /*display: none;*/
+}
+#drupal-modal {
+  #drupal-modal--body {
+    background-color: white;
+    .tabbable.tabs-left {
+      display: none;
+    }
+    .field-add-more-submit {
+      /*text-indent: -2000px;*/
+      &:after {
+        content: "Ajouter une autre date";
+        position: absolute;
+        left: 20px;
+        background-color: #5bc0de;
+        padding: 2px 30px 2px 2px;
+      }
+    }
+  }
+  .modal-buttons {
+    .glyphicon-ok:before {
+      content: "\e850";
+      color: @red-ensemble;
+    }
+    button:nth-child(2) {
+      display: none;
+    }
+  }
+}
+
+.path-frontpage {
+  .field--item {
+    img {
+      /*float: left;*/
+      /*margin-right: 20px;*/
+      max-width: 100%;
+    }
+  }
+  .group-title.same-height-title {
+    position: relative;
+    display: table-cell;
+    width: 100%;
+    vertical-align: bottom;
+    .field--name-node-title {
+      .event-article-home-title {
+        &.event {
+          a {
+            color: @gray-darker-ensemble;
+            .title-bold();
+            font-size: 1.4em;
+            width: 100%;
+            display: block;
+          }
+        }
+        &.article {
+          a {
+            color: @gray-darker-ensemble;
+            .title-bold();
+            font-size: 1.4em;
+          }
+        }
+      }
+    }
+    a {
+      display: block;
+    }
+  }
+  .home-actu {
+    .title-regular();
+    padding: 20px;
+    text-transform: uppercase;
+    color: #FFF;
+    background-color: @green-ensemble;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .feed-icons {
+    display: none;
+  }
+  .view-id-frontpage {
+    .col-xs-12 {
+      margin-bottom: 30px;
+    }
+  }
+}
+

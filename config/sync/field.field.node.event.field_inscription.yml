@@ -1,0 +1,29 @@
+uuid: a211d640-5027-4686-ad40-c921807fbc4c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_inscription
+    - node.type.event
+  module:
+    - webform
+id: node.event.field_inscription
+field_name: field_inscription
+entity_type: node
+bundle: event
+label: Inscription
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+  default_data: ''
+  status: open
+  open: ''
+  close: ''
+field_type: webform

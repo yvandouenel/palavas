@@ -1,0 +1,25 @@
+uuid: 80323959-585c-400c-865f-1daa08022e44
+langcode: fr
+status: true
+dependencies:
+  config:
+    - crop.type.liste_768x540_
+  module:
+    - crop
+name: liste_768x540_
+label: 'Liste (768x540)'
+effects:
+  164835e5-745e-49d9-b200-34f2ff74b437:
+    uuid: 164835e5-745e-49d9-b200-34f2ff74b437
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: liste_768x540_
+  b7e89957-b250-4aeb-ad3c-25141fd93605:
+    uuid: b7e89957-b250-4aeb-ad3c-25141fd93605
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 768
+      height: 540
+      anchor: center-center

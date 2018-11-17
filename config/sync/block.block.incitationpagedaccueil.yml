@@ -1,0 +1,29 @@
+uuid: fb4948dd-f756-4fc2-ab39-194bfcb9c0e0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - fixed_block_content.fixed_block_content.incitation_homepage
+  module:
+    - fixed_block_content
+    - system
+  theme:
+    - ensemble
+id: incitationpagedaccueil
+theme: ensemble
+region: incentive
+weight: 0
+provider: null
+plugin: 'fixed_block_content:incitation_homepage'
+settings:
+  id: 'fixed_block_content:incitation_homepage'
+  label: 'Incitation page d''accueil'
+  provider: fixed_block_content
+  label_display: '0'
+  view_mode: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

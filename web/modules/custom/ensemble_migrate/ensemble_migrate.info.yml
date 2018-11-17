@@ -1,0 +1,8 @@
+name: Migrations (Ensemble)
+type: module
+description: Migrations depuis la version Dotclear
+core: 8.x
+package: Ensemble
+dependencies:
+  - migrate_plus:migrate_plus
+  - drupal:migrate

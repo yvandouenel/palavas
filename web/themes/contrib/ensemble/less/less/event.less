@@ -1,0 +1,240 @@
+.page-node-type-event {
+  .region-content > h2.page-header {
+    display: none;
+  }
+  .field--name-field-event-type {
+    .title-regular();
+    text-transform: uppercase;
+    font-size: 0.7em;
+    a {
+      color: #000;
+    }
+  }
+  .field--name-node-title > h2.page-header {
+    font-size: 1em;
+    &:before {
+      .glyphicon();
+      content: "\e807";
+      color: @gray-ensemble;
+      font-size: 2em;
+    }
+  }
+  .field--name-field-dates {
+    margin-bottom: 20px;
+  }
+  .field--name-body {
+    padding-right: 30px;
+  }
+  .field--name-field-media-image {
+    margin-bottom: 30px;
+  }
+  .field--name-field-address {
+    margin-bottom: 30px;
+  }
+  .information {
+    float: left;
+    background-color: transparent;
+    border: 0;
+    margin-bottom: 20px;
+  }
+  .incitation {
+    float: left;
+    background-color: transparent;
+    border: 0;
+    margin-bottom: 20px;
+  }
+  .field--name-field-address {
+    clear: both;
+  }
+  .field--name-field-date {
+    clear: both;
+    &:after {
+      content: '';
+      display: block;
+      clear: both;
+      margin-bottom: 15px;
+    }
+  }
+  .field--name-node-changed-date {
+    clear: both;
+    padding-top: 15px;
+  }
+  .field--name-field-place {
+    margin-top: 30px;
+  }
+  .back-to-list {
+    clear: both;
+    a {
+      display: table;
+      .button-back();
+      margin: 0 0 0 100px;
+    }
+  }
+}
+/* Liste des événements ***********************************************************************************************/
+body.path-agenda {
+  #add-event-masrouge {
+    a {
+      display: block;
+      .title-extra-bold();
+      font-size: 1em;
+      color: @red-ensemble;
+      &:before {
+        .glyphicon();
+        content: '\e83c';
+        color: @red-ensemble;
+      }
+      &:hover {
+        text-decoration: none;
+        color: @green-ensemble;
+        &:before {
+          color: @green-ensemble;
+        }
+      }
+    }
+  }
+  h2.page-header {
+    color: @gray-darker-ensemble;
+    .title-regular();
+    font-size: 1em;
+  }
+  /* Zone de gestion des mois ***********************************/
+  #links-months {
+    margin: 0 auto;
+    display: table;
+    #previous-month,
+    #current-month,
+    #next-month {
+      display: table-cell;
+      vertical-align: middle;
+      a {
+        @media (max-width: @screen-sm) {
+          font-size: 0.7em;
+        }
+        .txt-bold();
+        text-transform: uppercase;
+        color: @gray-darker-ensemble;
+        text-decoration: none;
+        &:hover {
+          color: @red-ensemble;
+        }
+      }
+    }
+    #previous-month {
+      width: 0%;
+      text-align: right;
+      a {
+        &:after {
+          .glyphicon();
+          content: "\e833";
+          padding: 5px 20px 3px 4px;
+          border-radius: 25px;
+          color: #FFF;
+          background-color: @gray-darker-ensemble;
+          margin-left: 10px;
+        }
+        &:hover {
+          color: @red-ensemble;
+          &:after {
+            background-color: @red-ensemble;
+          }
+        }
+      }
+    }
+    #next-month {
+      width: 0%;
+      a {
+        &:before {
+          .glyphicon();
+          content: "\e834";
+          padding: 5px 15px 3px 8px;
+          border-radius: 25px;
+          color: #FFF;
+          background-color: @gray-darker-ensemble;
+          margin-right: 10px;
+        }
+        &:hover {
+          color: red;
+          &:after {
+            background-color: @red-ensemble;
+          }
+        }
+      }
+    }
+    h3#viewed-month {
+      .title-bold();
+      font-size: 2em;
+      text-align: center;
+      text-transform: uppercase;
+      @media (max-width: @screen-sm) {
+        font-size: 0.8em;
+        margin-right: 10px;
+      }
+    }
+    @media (min-width: @screen-md) {
+      width: 70%;
+    }
+  }
+  /* Fin de la zone de gestion des mois ****************/
+
+  /* Résultats mois par mois ***************************/
+  .view-content {
+    padding-top: 30px;
+    div.item-list {
+      padding: 10px 0;
+      border-bottom: 1px solid @gray-darker-ensemble;
+      h3 {
+        float: left;
+        .txt-bold();
+        font-size: 1.5em;
+        padding: 5px;
+        color: @green-ensemble;
+        margin-right: 20px;
+        &:before {
+          .glyphicon();
+          color: @green-ensemble;
+          content:"\e834";
+        }
+      }
+      ul {
+        float: left;
+        width: 80%;
+        li{
+          a {
+            #event-type-in-list{
+              float: right;
+              .txt-italic();
+            }
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            color: @gray-darker-ensemble;
+            .txt-bold();
+            &:before {
+              .glyphicon();
+              color: @gray-ensemble;
+              content:"\e83C";
+            }
+            &:hover {
+              color: @red-ensemble;
+              background-color: @gray-light-ensemble;
+              &:before {
+                color: @red-ensemble;
+              }
+            }
+            .schedule-event{
+              padding-left: 30px;
+            }
+          }
+        }
+      }
+      &:after {
+        display: block;
+        content: "";
+        clear: both;
+      }
+    }
+  }
+
+}
+

@@ -1,0 +1,42 @@
+langcode: fr
+id: ensemble_dc_file
+label: Fichiers
+migration_group: ensemble_dc
+source:
+  plugin: ensemble_dc_media
+  constants:
+    destination_base_path: 'public://legacy'
+process:
+  filename: media_file
+  source_full_path:
+    plugin: concat
+    delimiter: /
+    source:
+      - dotclear_root
+      - media_path
+      - media_dir
+      - media_file
+  destination_full_path:
+    plugin: concat
+    delimiter: /
+    source:
+      - constants/destination_base_path
+      - media_path
+      - media_dir
+      - media_file
+  uri:
+    plugin: file_copy
+    source:
+      - '@source_full_path'
+      - '@destination_full_path'
+  status:
+    plugin: default_value
+    default_value: 1
+  created: media_dt
+  changed: media_upddt
+  uid:
+    plugin: default_value
+    default_value: 'TRUE'
+destination:
+  plugin: 'entity:file'
+migration_dependencies: {  }

@@ -1,0 +1,22 @@
+uuid: d53b5273-d810-4721-ac74-f2fb13d23ba7
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: event_page
+label: 'Page événement'
+type: 'canonical_entities:node'
+pattern: 'agenda/[current-page:title]'
+selection_criteria:
+  391dfce1-9aaf-4dc5-bea5-b863f3b38bcf:
+    id: node_type
+    bundles:
+      event: event
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 391dfce1-9aaf-4dc5-bea5-b863f3b38bcf
+selection_logic: and
+weight: -5
+relationships: {  }

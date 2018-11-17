@@ -1,0 +1,127 @@
+uuid: f5ea9b71-855f-4ece-8fb7-d5bbd08632a0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.article.body
+    - field.field.node.article.field_home_slideshow
+    - field.field.node.article.field_image
+    - field.field.node.article.field_release_date
+    - field.field.node.article.field_thematique
+    - node.type.article
+  module:
+    - ds
+    - field_group
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - node_link
+        - group_group_title
+        - group_img_txt
+        - field_image
+        - node_title
+        - body
+    fields:
+      node_link:
+        plugin_id: node_link
+        weight: 0
+        label: hidden
+        formatter: default
+        settings:
+          'link text': 'Read more'
+          'link class': read-more
+          wrapper: ''
+          class: ''
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h3
+          class: 'article event-article-home-title'
+          exclude_node_title: '1'
+  field_group:
+    group_img_txt:
+      children:
+        - node_link
+        - field_image
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      format_settings:
+        label: 'img txt'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: img-txt
+      label: 'img txt'
+    group_group_title:
+      children:
+        - node_title
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        label: 'Group title'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'group-title same-height-title'
+      label: 'Group title'
+id: node.article.teaser
+targetEntityType: node
+bundle: article
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 2
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: ds_content
+  field_image:
+    type: entity_reference_entity_view
+    weight: 1
+    region: ds_content
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+hidden:
+  content_moderation_control: true
+  field_home_slideshow: true
+  field_release_date: true
+  field_thematique: true
+  langcode: true
+  links: true

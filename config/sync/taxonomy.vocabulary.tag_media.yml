@@ -1,0 +1,9 @@
+uuid: 69cedefc-ea29-4383-9870-3929926f172b
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Etiquettes Médias'
+vid: tag_media
+description: ''
+hierarchy: 0
+weight: 0

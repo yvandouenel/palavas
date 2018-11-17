@@ -1,0 +1,10 @@
+uuid: 56ffec0f-ab4e-4a5e-8496-b89eb31e7068
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+id: media.bandeau
+label: 'Haut événement (768x331)'
+targetEntityType: media
+cache: true

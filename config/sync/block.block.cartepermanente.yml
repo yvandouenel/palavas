@@ -1,0 +1,29 @@
+uuid: 5500234f-9ae8-4df1-8f81-e778cf736030
+langcode: fr
+status: true
+dependencies:
+  config:
+    - fixed_block_content.fixed_block_content.carte_permanente
+  module:
+    - fixed_block_content
+    - system
+  theme:
+    - ensemble
+id: cartepermanente
+theme: ensemble
+region: content
+weight: -5
+provider: null
+plugin: 'fixed_block_content:carte_permanente'
+settings:
+  id: 'fixed_block_content:carte_permanente'
+  label: 'Carte permanente'
+  provider: fixed_block_content
+  label_display: '0'
+  view_mode: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

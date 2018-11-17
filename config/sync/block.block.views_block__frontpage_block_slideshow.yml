@@ -1,0 +1,30 @@
+uuid: 27af874a-a600-4e01-8a55-25a1949d9672
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.frontpage
+  module:
+    - system
+    - views
+  theme:
+    - ensemble
+id: views_block__frontpage_block_slideshow
+theme: ensemble
+region: slideshow
+weight: -9
+provider: null
+plugin: 'views_block:frontpage-block_slideshow'
+settings:
+  id: 'views_block:frontpage-block_slideshow'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

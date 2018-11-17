@@ -1,0 +1,5 @@
+services:
+  coopernetredirect.event_subscriber:
+    class: Drupal\coopernetredirect\EventSubscriber\CoopernetredirectEventSubscriber
+    tags:
+      - { name: event_subscriber }

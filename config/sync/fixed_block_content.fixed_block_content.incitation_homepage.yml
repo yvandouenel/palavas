@@ -1,0 +1,12 @@
+uuid: c2ef6493-5de1-4e3d-988d-4e5f98790f18
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+  content:
+    - 'block_content:basic:abaa7cca-420d-4e78-b02a-fd849b889e2b'
+id: incitation_homepage
+title: 'Incitation page d''accueil'
+block_content_bundle: basic
+default_content: '{"_links":{"self":{"href":"http:\/\/local.ensemble.my\/block\/9?_format=hal_json"},"type":{"href":"http:\/\/fixed_block_content.drupal.org\/rest\/type\/block_content\/basic"}},"langcode":[{"value":"fr","lang":"fr"}],"type":[{"target_id":"basic"}],"status":[{"value":true,"lang":"fr"}],"info":[{"value":"Incitation page d\u0027accueil","lang":"fr"}],"default_langcode":[{"value":true,"lang":"fr"}],"revision_translation_affected":[{"value":true,"lang":"fr"}],"body":[{"value":"\u003Cdiv class=\u0022under-inci-info\u0022\u003E\r\n\u003Ch3 class=\u0022h3-information\u0022\u003E\u003Ca class=\u0022use-ajax information\u0022 data-dialog-type=\u0022modal\u0022 href=\u0022\/information-participation\u0022\u003EJe m\u0027informe\u003C\/a\u003E\u003C\/h3\u003E\r\n\r\n\u003Ch3\u003E\u003Ca class=\u0022use-ajax incitation\u0022 data-dialog-type=\u0022modal\u0022 href=\u0022\/information-participation\u0022\u003EJe participe\u003C\/a\u003E\u003C\/h3\u003E\r\n\u003C\/div\u003E\r\n","format":"full_html","processed":"\u003Cdiv class=\u0022under-inci-info\u0022\u003E\n\u003Ch3 class=\u0022h3-information\u0022\u003E\u003Ca class=\u0022use-ajax information\u0022 data-dialog-type=\u0022modal\u0022 href=\u0022\/information-participation\u0022\u003EJe m\u0027informe\u003C\/a\u003E\u003C\/h3\u003E\n\n\u003Ch3\u003E\u003Ca class=\u0022use-ajax incitation\u0022 data-dialog-type=\u0022modal\u0022 href=\u0022\/information-participation\u0022\u003EJe participe\u003C\/a\u003E\u003C\/h3\u003E\n\u003C\/div\u003E\n","summary":"","lang":"fr"}]}'

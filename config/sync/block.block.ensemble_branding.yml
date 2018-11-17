@@ -1,0 +1,25 @@
+uuid: c9a7bfb8-efbc-42d2-b9c8-c104743fe4e0
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ensemble
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: ensemble_branding
+theme: ensemble
+region: header
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Marque du site'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

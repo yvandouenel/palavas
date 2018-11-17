@@ -1,0 +1,11 @@
+uuid: a08cc8a8-6b75-4441-a46e-8924475aebf7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.argumentaire
+id: node.argumentaire
+target_entity_type_id: node
+target_bundle: argumentaire
+default_langcode: site_default
+language_alterable: false

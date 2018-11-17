@@ -1,0 +1,42 @@
+uuid: 3459a3d2-1564-43df-be73-16d500d4534d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.media_browser
+  module:
+    - views
+name: file_browser
+label: file_browser
+display: iframe
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Sélectionner les fichiers'
+  auto_open: true
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  1afbd746-babd-4849-bf43-c6c744d53716:
+    settings:
+      extensions: 'jpg jpeg png gif'
+      media_type: image
+      upload_location: 'public://'
+      multiple: '1'
+      submit_text: 'Sélectionner des fichiers'
+    uuid: 1afbd746-babd-4849-bf43-c6c744d53716
+    weight: 1
+    label: media_image_upload
+    id: media_image_upload
+  458fc7d2-b8a0-4bd3-8725-ce48a3b697b8:
+    settings:
+      view: media_browser
+      view_display: entity_browser_2
+      submit_text: 'Sélectionner les entités'
+      auto_select: false
+    uuid: 458fc7d2-b8a0-4bd3-8725-ce48a3b697b8
+    weight: 2
+    label: view
+    id: view

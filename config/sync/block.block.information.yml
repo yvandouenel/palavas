@@ -1,0 +1,23 @@
+uuid: 26fbb5fc-c385-4dc4-a7fa-dfcdbac75e43
+langcode: fr
+status: true
+dependencies:
+  config:
+    - fixed_block_content.fixed_block_content.information
+  module:
+    - fixed_block_content
+  theme:
+    - ensemble
+id: information
+theme: ensemble
+region: content
+weight: 0
+provider: null
+plugin: 'fixed_block_content:information'
+settings:
+  id: 'fixed_block_content:information'
+  label: information
+  provider: fixed_block_content
+  label_display: '0'
+  view_mode: ''
+visibility: {  }

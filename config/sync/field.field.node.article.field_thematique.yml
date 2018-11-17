@@ -1,0 +1,29 @@
+uuid: adfeb6d5-5202-4577-aa46-725676b3368a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_thematique
+    - node.type.article
+    - taxonomy.vocabulary.event_type
+id: node.article.field_thematique
+field_name: field_thematique
+entity_type: node
+bundle: article
+label: Thématique
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      event_type: event_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

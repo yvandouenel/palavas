@@ -1,0 +1,12 @@
+uuid: 724fdcae-86ea-4bd2-ae05-755b0ecd3054
+langcode: fr
+status: true
+dependencies: {  }
+label: 'Haut événement (768x331)'
+id: headband_thin
+description: 768x331
+aspect_ratio: '768:331'
+soft_limit_width: 768
+soft_limit_height: 331
+hard_limit_width: 768
+hard_limit_height: 331

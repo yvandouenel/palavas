@@ -1,0 +1,26 @@
+uuid: 055f718f-0021-4157-96dc-403fbecf9f78
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_release_date
+    - node.type.argumentaire
+  module:
+    - datetime_range
+id: node.argumentaire.field_release_date
+field_name: field_release_date
+entity_type: node
+bundle: argumentaire
+label: 'Dates de parution'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+    default_end_date_type: relative
+    default_end_date: '+90 days'
+default_value_callback: ''
+settings: {  }
+field_type: daterange

@@ -1,0 +1,10 @@
+uuid: 3318a62d-fdf5-40dd-92ce-61c91ad79dee
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+id: media.teaser
+label: 'Liste (768 x 540)'
+targetEntityType: media
+cache: true

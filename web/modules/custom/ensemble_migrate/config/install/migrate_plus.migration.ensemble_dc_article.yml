@@ -1,0 +1,41 @@
+langcode: fr
+id: ensemble_dc_article
+label: Articles
+migration_group: ensemble_dc
+source:
+  plugin: ensemble_dc_article
+  constants:
+    slash: /
+process:
+  title: post_title
+  body/format:
+    plugin: default_value
+    default_value: full_html
+  body/value: post_content_xhtml
+  body/summary: post_excerpt_xhtml
+  field_thematique:
+    plugin: migration_lookup
+    migration: ensemble_dc_thematique
+    source: cat_id
+  status:
+    plugin: static_map
+    bypass: false
+    source: post_status
+    map:
+      -2: 1 # En attente -> publié
+      -1: 1 # Programmé -> publié
+      0: 0  # Non publié -> non publié
+      1: 1  # Publié -> publié
+  uid:
+    plugin: default_value
+    default_value: 1
+  created: post_dt
+  changed: post_upddt
+  promote: post_selected
+destination:
+  plugin: 'entity:node'
+  default_bundle: article
+migration_dependencies:
+  required:
+    - ensemble_dc_thematique
+  optional: {  }

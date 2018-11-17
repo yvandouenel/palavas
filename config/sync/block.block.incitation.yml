@@ -1,0 +1,23 @@
+uuid: 77e3f42c-8f3f-4b7f-8d6f-85bae927f1d5
+langcode: fr
+status: true
+dependencies:
+  config:
+    - fixed_block_content.fixed_block_content.incitation
+  module:
+    - fixed_block_content
+  theme:
+    - ensemble
+id: incitation
+theme: ensemble
+region: content
+weight: 0
+provider: null
+plugin: 'fixed_block_content:incitation'
+settings:
+  id: 'fixed_block_content:incitation'
+  label: Incitation
+  provider: fixed_block_content
+  label_display: '0'
+  view_mode: ''
+visibility: {  }

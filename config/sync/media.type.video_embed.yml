@@ -1,0 +1,15 @@
+uuid: 3ce899bf-3399-4917-8d98-323ec1692661
+langcode: fr
+status: true
+dependencies:
+  module:
+    - video_embed_media
+id: video_embed
+label: 'Video embed'
+description: 'A video embeded (from youtoube as example)'
+source: video_embed_field
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_video_embed_field
+field_map: {  }

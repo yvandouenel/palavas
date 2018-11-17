@@ -1,0 +1,20 @@
+uuid: be2f9614-42fc-4b33-8a34-cbef18eb4b23
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - ensemble
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: ensemble_local_actions
+theme: ensemble
+region: content
+weight: -3
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Actions d''administration principales'
+  provider: core
+  label_display: visible
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: 78f844bb-c8db-4597-9e18-ed86c37aef24
+langcode: fr
+status: true
+dependencies:
+  config:
+    - crop.type.medium_carre
+  module:
+    - crop
+name: medium_carre
+label: 'Medium carré (400x400)'
+effects:
+  4047d6b7-f261-44c4-a45a-3c8273e8b906:
+    uuid: 4047d6b7-f261-44c4-a45a-3c8273e8b906
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: medium_carre
+  bf1358a0-b8b8-4fbb-ba05-3c16f8e6617b:
+    uuid: bf1358a0-b8b8-4fbb-ba05-3c16f8e6617b
+    id: image_scale
+    weight: -9
+    data:
+      width: 400
+      height: 400
+      upscale: false

@@ -1,0 +1,22 @@
+uuid: 431d45a9-1fa0-4c84-86cd-a7f4816bd3a4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.argumentaire
+id: node.argumentaire.promote
+field_name: promote
+entity_type: node
+bundle: argumentaire
+label: 'Promu en page d''accueil'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

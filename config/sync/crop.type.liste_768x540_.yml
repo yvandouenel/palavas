@@ -1,0 +1,12 @@
+uuid: 392872e3-5361-40a0-90eb-0307e9384afa
+langcode: fr
+status: true
+dependencies: {  }
+label: 'Liste (768x540)'
+id: liste_768x540_
+description: ''
+aspect_ratio: '768:540'
+soft_limit_width: 768
+soft_limit_height: 540
+hard_limit_width: 768
+hard_limit_height: 540

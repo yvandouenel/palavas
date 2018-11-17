@@ -1,0 +1,23 @@
+uuid: 518c0bbf-dd5c-4773-9800-e807d5298af6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_home_slideshow
+    - node.type.article
+id: node.article.field_home_slideshow
+field_name: field_home_slideshow
+entity_type: node
+bundle: article
+label: 'Diaporama accueil ?'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

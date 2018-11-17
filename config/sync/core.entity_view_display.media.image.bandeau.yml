@@ -1,0 +1,35 @@
+uuid: e5cbeed7-f426-4c1e-baaa-0a5a8edefe47
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.bandeau
+    - field.field.media.image.field_media_image
+    - field.field.media.image.field_tag_media
+    - image.style.bandeau_fin
+    - media.type.image
+  module:
+    - image
+_core:
+  default_config_hash: jOwnt_yq6AKAfqU6f0xKnxEkFQ2eTPJWxrk3WMLbL68
+id: media.image.bandeau
+targetEntityType: media
+bundle: image
+mode: bandeau
+content:
+  field_media_image:
+    label: visually_hidden
+    settings:
+      image_style: bandeau_fin
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    weight: 1
+    region: content
+hidden:
+  created: true
+  field_tag_media: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

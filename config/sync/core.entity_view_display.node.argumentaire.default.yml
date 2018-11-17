@@ -1,0 +1,70 @@
+uuid: 94b90575-b3c2-4f46-80af-ecfe0a8bc760
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.argumentaire.body
+    - field.field.node.argumentaire.field_image
+    - field.field.node.argumentaire.field_release_date
+    - field.field.node.argumentaire.field_thematique
+    - node.type.argumentaire
+  module:
+    - datetime_range
+    - ds
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - body
+        - field_image
+id: node.argumentaire.default
+targetEntityType: node
+bundle: argumentaire
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: ds_content
+  field_image:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: ds_content
+  field_release_date:
+    weight: 2
+    label: above
+    settings:
+      separator: '-'
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+hidden:
+  field_thematique: true
+  langcode: true
+  links: true

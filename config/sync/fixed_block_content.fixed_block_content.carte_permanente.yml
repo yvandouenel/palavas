@@ -1,0 +1,12 @@
+uuid: a0ae54f8-ad90-4794-9249-39c624e2dba6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+  content:
+    - 'block_content:basic:7318018d-bf9b-47e1-896e-92f0e5341804'
+id: carte_permanente
+title: 'Carte permanente'
+block_content_bundle: basic
+default_content: '{"_links":{"self":{"href":"http:\/\/local.ensemble.my\/block\/4?_format=hal_json"},"type":{"href":"http:\/\/fixed_block_content.drupal.org\/rest\/type\/block_content\/basic"}},"langcode":[{"value":"fr","lang":"fr"}],"type":[{"target_id":"basic"}],"status":[{"value":true,"lang":"fr"}],"info":[{"value":"Carte permanente","lang":"fr"}],"default_langcode":[{"value":true,"lang":"fr"}],"revision_translation_affected":[{"value":true,"lang":"fr"}],"body":[{"value":"\u003Cdiv class=\u0022row\u0022\u003E\r\n\u003Cdiv class=\u0022col-md-12\u0022\u003E\r\n\u003Ch2 class=\u0022localisation\u0022\u003EEv\u00e9nements citoyens g\u00e9olocalis\u00e9s\u003C\/h2\u003E\r\n\r\n\u003Cdiv id=\u0022map-legend\u0022\u003E\u0026nbsp;\u003C\/div\u003E\r\n\r\n\u003Cdiv id=\u0022date-markers-legend\u0022\u003E\u003Cspan class=\u0022date-legend\u0022 id=\u0022show-markers\u0022\u003ETous les \u00e9v\u00e9nements\u003C\/span\u003E\u003C\/div\u003E\r\n\r\n\u003Cdiv class=\u0022map--front\u0022 id=\u0022map\u0022\u003E\u0026nbsp;\u003C\/div\u003E\r\n\u003C\/div\u003E\r\n\u003C\/div\u003E\r\n","format":"full_html","processed":"\u003Cdiv class=\u0022row\u0022\u003E\n\u003Cdiv class=\u0022col-md-12\u0022\u003E\n\u003Ch2 class=\u0022localisation\u0022\u003EEv\u00e9nements citoyens g\u00e9olocalis\u00e9s\u003C\/h2\u003E\n\n\u003Cdiv id=\u0022map-legend\u0022\u003E\u00a0\u003C\/div\u003E\n\n\u003Cdiv id=\u0022date-markers-legend\u0022\u003E\u003Cspan class=\u0022date-legend\u0022 id=\u0022show-markers\u0022\u003ETous les \u00e9v\u00e9nements\u003C\/span\u003E\u003C\/div\u003E\n\n\u003Cdiv class=\u0022map--front\u0022 id=\u0022map\u0022\u003E\u00a0\u003C\/div\u003E\n\u003C\/div\u003E\n\u003C\/div\u003E\n","summary":"","lang":"fr"}]}'

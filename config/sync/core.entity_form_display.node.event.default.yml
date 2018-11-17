@@ -1,0 +1,93 @@
+uuid: 78447168-44dd-417e-9129-27051d8cf60f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.event.body
+    - field.field.node.event.field_dates
+    - field.field.node.event.field_document
+    - field.field.node.event.field_event_condition
+    - field.field.node.event.field_event_type
+    - field.field.node.event.field_image
+    - field.field.node.event.field_inscription
+    - node.type.event
+  module:
+    - single_datetime
+    - text
+    - webform
+id: node.event.default
+targetEntityType: node
+bundle: event
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 1
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_dates:
+    weight: 2
+    settings:
+      hour_format: 24h
+      allow_times: '15'
+      exclude_date: ''
+      datetimepicker_theme: default
+      min_date: ''
+      max_date: ''
+      year_start: ''
+      year_end: ''
+      disable_days:
+        1: 0
+        2: 0
+        3: 0
+        4: 0
+        5: 0
+        6: 0
+        7: 0
+      inline: 0
+    third_party_settings: {  }
+    type: single_date_time_range_widget
+    region: content
+  field_event_condition:
+    weight: 5
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_event_type:
+    type: options_buttons
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_inscription:
+    weight: 4
+    settings:
+      default_data: true
+    third_party_settings: {  }
+    type: webform_entity_reference_select
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_document: true
+  field_image: true
+  langcode: true
+  moderation_state: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

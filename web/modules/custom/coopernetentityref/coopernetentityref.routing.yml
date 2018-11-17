@@ -1,0 +1,14 @@
+coopernetentityref.generate:
+  path: 'coopernetentityref/generate'
+  defaults:
+    _controller: '\Drupal\coopernetentityref\Controller\coopernetEntityRefController::generate'
+  requirements:
+    _permission: 'generate coopernet entity ref'
+
+coopernetentityref.form:
+  path: '/admin/config/development/coopernetentityref'
+  defaults:
+    _form: 'Drupal\coopernetentityref\Form\coopernetEntityRef'
+    _title: 'coopernetentityref settings'
+  requirements:
+    _permission: 'administer site configuration'
